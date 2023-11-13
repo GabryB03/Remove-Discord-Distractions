@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Discord Remove Distractions
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Remove all the Discord distractions to get concentrated on what's really important
 // @author       GabryB03
 // @match        https://www.discord.com/*
+// @match        https://discord.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=discord.com
 // @updateURL    https://github.com/GabryB03/Remove-Discord-Distractions/raw/main/RemoveDiscordDistractions.user.js
 // @downloadURL  https://github.com/GabryB03/Remove-Discord-Distractions/raw/main/RemoveDiscordDistractions.user.js
@@ -31,7 +32,7 @@
                 }
             }
 
-            var distractingClasses = ["guilds__2b93a", "searchBar_e4ea2a"];
+            var distractingClasses = ["guilds__2b93a", "searchBar_e4ea2a", "container__5c7e7"];
 
             for (var j = 0; j < distractingClasses.length; j++)
             {
