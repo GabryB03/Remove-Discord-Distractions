@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Discord Remove Distractions
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Remove all the Discord distractions to get concentrated on what's really important
 // @author       GabryB03
 // @match        https://www.discord.com/*
@@ -32,7 +32,7 @@
                 }
             }
 
-            var distractingClasses = ["guilds__2b93a", "searchBar_e4ea2a", "container__5c7e7"];
+            var distractingClasses = ["guilds__2b93a", "searchBar_e4ea2a", "container__5c7e7", "toolbar__88c63"];
 
             for (var j = 0; j < distractingClasses.length; j++)
             {
